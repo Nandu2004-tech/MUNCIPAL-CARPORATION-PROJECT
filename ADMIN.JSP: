@@ -1,0 +1,45 @@
+
+<%--
+ Document : adminlogaction
+ Created on : Jun 28, 2024, 1:53:59 PM
+ Author : hp
+--%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%
+ String name=request.getParameter("name");
+ 
+String password=request.getParameter("password"); 
+try{
+ Class.forName("com.mysql.jdbc.Driver");
+ Connection 
+con=DriverManager.getConnection("jdbc:mysql://localhost:3306/muncipal","root","r
+oot");
+ Statement st=con.createStatement();
+ ResultSet rs=st.executeQuery("select * from tablename1 where name='"+name+"' 
+and '"+password+"'");
+ if(rs.next()){
+ %>
+ <script>
+ window.alert("logged in successfully.......");
+ window.location="adminhome.jsp"
+ </script>
+ <%
+ }
+else{
+%>
+<script>
+ window.alert("logged failed.......");
+ window.location="admin.html"
+ </script>
+ <%
+}
+ 
+}
+catch(Exception e){
+ out.println(e);
+}
+%>
