@@ -1,0 +1,153 @@
+<%--
+ Document : userloginhome.jsp
+ Created on : Jun 28, 2024, 2:37:43 PM
+ Author : hp
+--%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+ <html>
+ <head>
+ <title>MUNCIPAL CORPORATION</title>
+ <style>
+ #header{
+ display: flex;
+ height: 200px;background-color: wheat;
+ width: 100%;
+ margin: 0px;
+ 
+ }
+ #box{
+ display: flex;
+ height: 120px;
+ background-color: lightgrey;
+ width: 100%;
+ margin: 1px;
+ 
+ }
+ .image{
+ width: 100%;
+ height: 120px;
+ }
+ b{
+ color: red;
+ 
+ }
+ #box1{
+ display: flex;
+ height: 700px;
+ background-image: url(OIP.jpeg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ }
+ label{
+ margin-left: 450px;
+ color: blue;
+ }
+ p{
+ color: white;
+ }
+ #boy{
+ height: 300px;
+ width: 500px;
+ border:1px solid white;
+ background: lightsteelbluewhitesmoke;
+ margin-top: 300px;
+ color: white;
+ 
+ }
+ table{
+ color: white;
+ }
+ .header ul {
+ 
+ display: inline-block;
+ height: 50px;
+ width: 100%;
+ }
+ .header ul li{
+ 
+ float: center;
+ font-size: 20px;
+ width: 100%;
+ display: inline-block;
+ 
+ margin: 0px 50px;
+ padding-top: 20px;
+ a{
+ text-decoration: none;
+ color: blue;
+ display: inline-block;
+}
+ a:hover{
+ background-color: red;
+ }
+ p{
+ align-items: center;
+ width: 100%;
+ padding-top: 10px;
+ padding-left: 150px;
+ 
+ size: 50px;
+ }
+ b1{
+ color: white;
+ }
+ </style>
+ </head>
+ <body>
+ 
+ <div id ="header" > <center>
+ <label for="language-names"> select a language:</label>
+ <select name="language-names" id="language-names">
+ <option value="telugu">telugu</option>
+ <option value="english">english</option>
+ <option value="hindi">hindi</option>
+ </select>
+ </center>
+ 
+ <ul>
+ <li> <a href="userhome.jsp">home</a></li>
+ <li><a href="browsproposes.jsp">brow</a></li>
+ <li><a href="reportdamage.jsp">report</a></li>
+ <li><a href="user.html">log out</a></li>
+ <li><a href="enterdiscussion.jsp">enter</a></li>
+ 
+ </ul>
+ <% String username=(String)session.getAttribute("username");%>
+ <h1>wele come to enter discussion <%=username%></h1>
+ </div>
+ <div id="box">
+ <image src="t" >
+ <h1><b>GREATER HYDERABAD MUNICIPAL 
+ CORPORATION</b>Government Of Telangana</h1>
+ </div>
+ <div id="box1">
+ <p><b1>for user id change request,please click on Register yourself.After registration,login 
+into the page .then
+ select userid change request under transanction tab and enter the related field and 
+submithe request</b1></p>
+ <center> 
+ <div id="boy">
+ <h2> Citizen login</h2>
+ <table>
+ <tr>
+ <th>Phone No</th>
+ <td><input type="text" name="phone no"></td>
+ </tr>
+ 
+ <tr>
+ <th>Password</th>
+ <td><input type="text" name="password"></td>
+ </tr>
+ <tr>
+ 
+ <td><a><button type="submit">Login</button></a></td>
+ </tr>
+ <td>
+ <a href="userhome.jsp">Reset</a>
+ </td>
+ </table>
+ </div>
+ </center>
+ </div>
+ </body>
+</html>
