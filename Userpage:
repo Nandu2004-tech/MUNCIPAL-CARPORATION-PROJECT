@@ -3,11 +3,7 @@
  <head>
  <title>MUNCIPAL CORPORATION</title>
  <style>
- 
- 
- 
- 
- #body{
+  #body{
  background-image: url(l);
  background-repeat: no-repeat;
  background-size: cover;
@@ -58,8 +54,6 @@ value="password"></td>
  </tr>
  </table>
  </form>
- 
- 
  </div>
  </center>
  </div>
