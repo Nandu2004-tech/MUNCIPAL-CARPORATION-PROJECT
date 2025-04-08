@@ -1,0 +1,64 @@
+<html>
+ <head>
+ <title>MUNCIPAL CORPORATION</title>
+ <style>
+ body{
+ background-image: url(a);
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 100px;
+ width: 100%;
+ }
+ #p1{
+ text-align: center;
+ color: white;
+ padding-top: 50px;
+ }
+ .bg{
+ color: red;
+ height: 100vh;
+ width: 100vw;
+ }
+ .imgcls{
+ height: 400px;
+ width: 800px;
+ }
+ box{
+ height: 250px;
+ width: 350px;
+ padding: 40px;
+ background-color: red;
+ }
+ h1{
+ color: white;
+ padding-top: 30px;
+ }
+ </style>
+ </head>
+ <body> 
+ <div id="bg">
+ <center>
+ <div id="box">
+ <h1 id="h1">Admin Login</h1>
+ <form action="adminaction.jsp">
+ <table>
+ <tr>
+ <td style="color: white;">name:</td>
+ <td><input type="text" name="name" value="name"></td>
+ </tr>
+ <tr>
+ <td style="color: white;">password</td>
+ <td><input type="password" name="password" 
+value="password"></td>
+ </tr>
+ <tr>
+ <td style="color: white"><a ><button 
+type="submit">login</button></a></td>
+ </tr>
+ </table>
+ </form>
+  </div>
+ </center>
+ </div>
+ </body>
+</html>
