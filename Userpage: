@@ -1,0 +1,67 @@
+
+<html>
+ <head>
+ <title>MUNCIPAL CORPORATION</title>
+ <style>
+ 
+ 
+ 
+ 
+ #body{
+ background-image: url(l);
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 100vh;
+ width: 100%;
+ }
+ h1{
+ padding-top: 50px;
+ }jj
+ ::placeholder{
+ padding-left: 30px;
+ color: black;
+ }
+ option{
+ width: 200px;
+ height: 30px;
+ margin-left: 30px;
+ }
+ a:hover{
+ 
+ background-color: greenyellow;
+ width:100% ;
+ 
+ }
+ </style>
+ </head>
+ <body>
+ 
+ <div id="body">
+ <center>
+ <div id="box">
+ <h1 style="color: white;">User Login</h1>
+ <form action="useraction.jsp">
+ <table>
+ <tr>
+ <th style="color: white; ">username:</th>
+ <td><input type="password" name="username" placeholder="username" 
+value="username"></td>
+ </tr>
+ <tr>
+ <th style="color: white;">password:</th>
+ <td><input type="password" name="password" placeholder="password" 
+value="password"></td>
+ 
+ </tr>
+ <tr>
+ <td style="color: white;"><a ><button type="submit">sign up</button></a></td>
+ </tr>
+ </table>
+ </form>
+ 
+ 
+ </div>
+ </center>
+ </div>
+ </body>
+</html>
